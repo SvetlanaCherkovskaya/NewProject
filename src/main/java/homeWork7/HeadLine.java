@@ -1,21 +1,22 @@
-package homeWork;
+package homeWork7;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class TemperatureValue {
-    @JsonProperty("Value")
-    private int value;
+public class HeadLine {
 
-    public int getValue() {
-        return value;
+    @JsonProperty("Text")
+    String text;
+
+    public String getText() {
+        return text;
     }
 
     @Override
     public String toString() {
-        return "TemperatureValue{" +
-                "value=" + value +
+        return "HeadLine{" +
+                "text='" + text + '\'' +
                 '}';
     }
 }

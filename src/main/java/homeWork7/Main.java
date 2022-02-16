@@ -1,4 +1,4 @@
-package homeWork;
+package homeWork7;
 
 
 import java.io.IOException;
